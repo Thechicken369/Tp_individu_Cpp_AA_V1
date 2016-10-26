@@ -10,9 +10,10 @@ void main()
 
 	if (myGame.affichageMenu())
 	{
-
+		//Boucle principale 
 		while (replay) {
 			myGame.initGame();
+			//boucle de jeu de saisie du mot 
 			while (!myGame.getIsWon())
 			{
 				myGame.comptBullAndCow(myGame.enterWord());
@@ -29,8 +30,5 @@ void main()
 
 			replay = myGame.replay();
 		}
-
-
-		system("pause");
 	}
 }
